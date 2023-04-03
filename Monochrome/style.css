@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 12vh;
+    background-color: black;
+    display: flex;
+}
+
+header .left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header .right ul {
+    margin-right: 10%
+}
+
+header .right ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+header .right ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+section.main {
+    height: 88vh;
+    background-image: url('img/hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+section.main .main-text {
+    width: 100%;
+    height: 70%;
+    margin-left: 10%;
+}
+
+section.main .main-text h1 {
+    font-size: 70px;
+}
+
+section.main .main-text p {
+    margin-top: 3%;
+}
+
+section.about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.about .about-main {
+    width: 100%;
+    height: 70%;
+}
+
+.about .about-main .about-naslov {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.about-naslov {
+    width: 90%;
+    height: 20%;
+}
+
+.about-naslov h1 {
+    font-size: 50px;
+}
+
+.about-naslov p {
+    font-size: 16px;
+    margin-top: 1%;
+}
+
+.about-grid {
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-grid .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
+
+.grid-item .naslov {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.grid-item .naslov h1 {
+    margin-left: 10%;
+    text-transform: uppercase;
+}
+
+.grid-item .tekst {
+    width: 100%;
+    height: 60%;
+}
+
+.grid-item .tekst p {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.grid-item .button {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.grid-item .button button {
+    margin-left: 10%;
+    width: 50%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+section.showcase {
+    width: 100%;
+    height: 50vh;
+}
+
+section.showcase .showcase-naslov {
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+section.showcase .showcase-brendovi{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.showcase-brendovi ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
